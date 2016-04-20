@@ -27,7 +27,12 @@ function minify(file) {
 			throw err;
 		}
 
-		data = data.replace(/\n/, " ");
+		data = data
+		.replace(/[\n\t]/g, " ")
+		.replace(/\ */g, '')
+		//.replace(/\ +/g, '');
+
+
 console.log(data);
 
 	});
