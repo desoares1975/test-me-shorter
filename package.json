@@ -1,0 +1,23 @@
+{
+  "name": "test-me-shorter",
+  "version": "0.1.0",
+  "description": "Test your code and then reduce it to test again",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/desoares1975/test-me-shorter.git"
+  },
+  "keywords": [
+    "code",
+    "benchmark"
+  ],
+  "author": "desoares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/desoares1975/test-me-shorter/issues"
+  },
+  "homepage": "https://github.com/desoares1975/test-me-shorter#readme"
+}
