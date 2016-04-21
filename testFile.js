@@ -1,9 +1,10 @@
 /* jshint esversion: 6, strict: true */
-'use strict';
 
 var test = ()=>{
-	let test = (1000000 + 2 +12312/12 -10 +(54*45)) *10000 / 0.456454546;
+	'use strict';
+
+	let test = (1000000000 + 200000 +123120000000454/1200 -1000 +(504*4000005)) *10000 / 0.456001234546541454546;
 
 	console.log(     test.toString());
-}
+};
 

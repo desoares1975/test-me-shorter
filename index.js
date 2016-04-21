@@ -8,12 +8,18 @@ module.exports.main = (file)=>{
 	if (file){
 		console.log('Dear user, if your code have debuging logs, you should remove  it before'+
 			'benchmarking it, this application will only make the code smaller.');
-		console.time();
+		console.time(12);
 
-		require('./' + file);
-		console.timeEnd();
+		try {
+			require('./' + file);
+		} catch(error) {
+			return error;
+		}
+
+		let result = console.timeEnd(12);
+		// return result;
 	}
-}
+};
 
 module.exports.minify = (file)=>{
 	'use strict';
@@ -25,11 +31,9 @@ module.exports.minify = (file)=>{
 
 		data = data
 		.replace(/[\n\t]/g, " ")
-		.replace(/\ */g, '')
+		.replace(/\ */g, '');
 		//.replace(/\ +/g, '');
 
-
-console.log(data);
-
+		console.log(data);
 	});
-}
+};
