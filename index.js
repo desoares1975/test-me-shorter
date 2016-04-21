@@ -2,7 +2,7 @@
 var file = process.argv[2],
 	fs = require('fs');
 
-function main(file) {
+module.exports.main = (file)=>{
 	'use strict';
 
 	if (file){
@@ -13,13 +13,9 @@ function main(file) {
 		require('./' + file);
 		console.timeEnd();
 	}
-
-
 }
 
-main(file);
-
-function minify(file) {
+module.exports.minify = (file)=>{
 	'use strict';
 
 	var content = fs.readFile(file, 'utf-8', (err, data)=>{
@@ -37,5 +33,3 @@ console.log(data);
 
 	});
 }
-
-minify(file);

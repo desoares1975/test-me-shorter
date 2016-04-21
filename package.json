@@ -4,7 +4,7 @@
   "description": "Test your code and then reduce it to test again",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "echo 'Stating test mode...'; jshint ./; ./node_modules/.bin/nodemon --exec mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/desoares1975/test-me-shorter/issues"
   },
-  "homepage": "https://github.com/desoares1975/test-me-shorter#readme"
+  "homepage": "https://github.com/desoares1975/test-me-shorter#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jshint": "^2.9.2",
+    "mocha": "^2.4.5",
+    "nodemon": "^1.9.1"
+  }
 }
